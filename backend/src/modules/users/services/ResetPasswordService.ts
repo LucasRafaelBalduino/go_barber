@@ -1,10 +1,11 @@
 import { injectable, inject } from 'tsyringe';
 import { isAfter, addHours } from 'date-fns';
 
+// import User from '@modules/users/infra/typeorm/entities/User';
 import AppError from '@shared/errors/AppErro';
-
+// import { compare } from 'bcryptjs';
 import IUsersRepository from '../repositories/IUsersRepository';
-import IUserTokensRepository from '../repositories/IUserTokenRepository';
+import IUserTokensRepository from '../repositories/IUserTokensRepository';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
 interface IRequest {
